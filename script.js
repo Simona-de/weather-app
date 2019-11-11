@@ -25,7 +25,7 @@ today.innerHTML = `${day} ${date} ${month}  ${hour}:${minutes}`;
 
 let apiKey = "71f687cf35794567462cfbc034ffcc9d";
 function showTemperature(response) {
-  let temperature = Math.round(response.data.main.temp);
+  let temperature = response.data.main.temp;
   let temp = document.querySelector("#temp");
   temp.innerHTML = `${temperature}`;
 }
@@ -50,4 +50,4 @@ function showPosition(position) {
 navigator.geolocation.getCurrentPosition(showPosition);
 
 let button = document.querySelector("#current-loc");
-button.addEventListener("click", showPosition);
+button.addEventListener("click", showTemperature);
