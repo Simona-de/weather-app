@@ -1,14 +1,89 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>weather</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|McLaren&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/422f0e7669.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>hello</h1>
+    <div id="app"></div>
+    <div class="container">
+      <h1>Weather</h1>
+      <br />
+      <h2 class="date">01-11-2019 18:18</h2>
+      <i class="far fa-sun" id="sun"></i>
+      <form id="enter-city">
+        <input type="text" placeholder="enter city" id="city-input" />
+        <input type="submit" value="search" />
+      </form>
+      <button id="current-loc">current location</button>
+      <h3 id="city">
+        Porto Torres
+      </h3>
+      <span class="temp" id="temp">24</span
+      ><a href="#" id="temp-celcius">°c</a> /
+      <a href="#" id="temp-far">°f</a>
+      <ul>
+        <li>Humidity<span id="humidity"> 0</span>%</li>
+        <li>wind<span id="wind">0</span>%</li>
+      </ul>
+
+      <hr />
+      <div class="row">
+        <div class="col">
+          Mon
+          <div><i class="far fa-sun"></i></div>
+          <div>Max-Min</div>
+        </div>
+        <div class="col">
+          Tue
+          <div><i class="fas fa-cloud"></i></div>
+          <div>Max-Min</div>
+        </div>
+        <div class="col">
+          Wen
+          <div><i class="far fa-sun"></i></div>
+          <div>25°-26°</div>
+        </div>
+        <div class="col">
+          Thu
+          <div><i class="fas fa-cloud"></i></div>
+          <div>22°-14°</div>
+        </div>
+        <div class="col">
+          Fri
+          <div><i class="far fa-sun"></i></div>
+          <div>22°13°</div>
+        </div>
+        <div class="col">
+          Sat
+          <div><i class="fas fa-cloud"></i></div>
+          <div>22°-17°</div>
+        </div>
+        <div class="col">
+          Sun
+          <div><i class="fas fa-cloud"></i></div>
+          <div>21°-16°</div>
+        </div>
+      </div>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>

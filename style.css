@@ -1,5 +1,43 @@
-h1 {
+body {
+  box-sizing: border-box;
+  width: 50%;
+  border: solid rgb(199, 113, 134);
+  border-radius: 25px;
+  box-shadow: lightblue 4px;
+  margin: 0 auto;
+  display: block;
+  padding: 3cm;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+h1,
+h2,
+h3,
+span,
+a {
   font-family: "McLaren", cursive;
   color: rgb(212, 106, 106);
   line-height: 1cm;
+}
+h3 {
+  margin: 1cm 0cm;
+}
+#sun {
+  font-size: 100px;
+  color: rgb(214, 201, 84);
+  position: absolute;
+  left: 60%;
+}
+.col {
+  font-family: "Liu Jian Mao Cao", cursive;
+  font-weight: bolder;
+  color: rgb(57, 177, 103);
+}
+.fa-sun {
+  font-size: 30px;
+  color: rgb(214, 201, 84);
+}
+.fa-cloud {
+  font-size: 30px;
+  color: rgb(150, 150, 141);
 }
